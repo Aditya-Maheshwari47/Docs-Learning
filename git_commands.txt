@@ -1,0 +1,48 @@
+Git Commands Overview -->
+
+1). git init  
+        Creates a new git repo in current folder(where intialized). 
+        Start tracking project, create .git file (keeps history track)
+
+2) git status  
+        shows current state of files in repository as modified,added, not tracked yet.
+
+3) git add . 
+        stages(moving changes before commit) all changed files(which are modified / delete/ new) within the current repo for next commit.
+
+4) git commit -m "message"  
+        saves the staged changes With a Message, (checkpoint in project history)
+        helps in tracking progress with message(reason)
+
+5) git branch  
+        shows all branches in the repository
+        helps in working on features without breaking main code, managing multiple development
+
+6) git branch -M main
+        renames the current branch to main.
+        (-M is for --move --force even if the branch named 'main' already exist otherwise git would prevent overide)
+
+7) git config --global user.name "Your Name"
+   git config --global user.email "Your email"
+        set your username and email on desktop
+
+8) git remote add origin <repo-url>
+        connects local project to github online repo.
+        used for push code/pull updates
+
+9) git push origin main
+        uploads local commits to github(sending files to main branch)
+
+10) git pull origin main
+        Fetch and merges latest code (changes) from github to local system
+
+11) git checkout -b branch-name 
+        Creates and switches to a new branch.
+        (-b --> It is a flag that performs 2 actions simultaneously as -->
+            1. git branch branch-name (create a new branch)
+            2. git checkout branch-name (to switch to it)
+        )
+12) git log 
+        history
+
+
