@@ -43,6 +43,11 @@ Git Commands Overview -->
             2. git checkout branch-name (to switch to it)
         )
 12) git log 
-        history
+        history of commits 
+
+13) git commit --amend -m "new-message"   (rewrites last commit message locally)
+    git push --force-with-lease            (Force push to update remote as normal push won’t work)
+
+        Change the LAST commit message, even after push
 
 
